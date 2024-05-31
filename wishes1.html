@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0e68c;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #b63c0f;
+            font-size: 3em;
+            font-family: 'Pacifico', cursive;
+            margin-top: 20px;
+        }
+        p {
+            color: #2f4f4f;
+            font-size: 1.2em;
+        }
+        .birthday-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        .balloons {
+            margin-top: 20px;
+        }
+        .more-info-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .dialog-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        .dialog-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: left;
+            overflow-y: auto; /* Add scrollbar when content exceeds height */
+            max-height: 80vh; /* Limit maximum height to 80% of viewport height */
+        }
+        .dialog-box h2 {
+            color: #ff4500;
+            font-size: 2em;
+            margin-top: 0;
+        }
+        .close-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2f4f4f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-card">
+        <h1>Happiest birthday to my HeartBeat</h1>
+        <p>Wishing you a day filled with love, joy, and success ahead. Happy birthday, Paapu!</p>
+        <p>I am so grateful and lucky to have you in my life Paapu</p>
+        <div class="balloons">
+            🎈🎉🎂🎁
+        </div>
+        <button class="more-info-btn" onclick="showDialog()">Click here to know more about my heartbeat</button>
+    </div>
+
+    <div class="dialog-overlay" id="dialogOverlay">
+        <div class="dialog-box">
+            <h2>My Husband</h2>
+            <p>1. He is a blessing in my life.</p>
+            <p>2. He is the safest heaven where I can overcome all my fears.</p>
+            <p>3. He is the only person I trust more than me and enough to give myself too.</p>
+            <p>4. He is the perfect gentleman in this world.</p>
+            <p>5. His eyes alone have the power to make me feel shy and smile.</p>
+            <p>6. You are always the reason I want to keep living, always together with you.</p>
+            <p>7. He is the first child and cute baby to me.</p>
+            <br>
+            <p>Finally, "Paapu" is not just a word; it is soul and blood to me.
+                You don't have any idea that how much I love you, miss you, and craving for you. Even words can't express my love, Cry can't express the pain behind missing you..<br>
+                I hope and wish that we will taste the sweetness and success of life together in the future.<br><br>
+                <b>And I AM ALWAYS THERE FOR YOU TO SUPPORT AND MOTIVATE  YOU AS A FRIEND AND READY TO SHARE YOUR SADNESS AND HAPPINESS  AS A WIFE.
+                </b></p>
+            <p></p>
+            <button class="close-btn" onclick="closeDialog()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function showDialog() {
+            document.getElementById('dialogOverlay').style.display = 'flex';
+        }
+
+        function closeDialog() {
+            document.getElementById('dialogOverlay').style.display = 'none';
+            window.location.href = 'dedication.html'; // Navigate to the dedication page
+        }
+    </script>
+</body>
+</html>
